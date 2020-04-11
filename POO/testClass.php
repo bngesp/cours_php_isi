@@ -2,16 +2,13 @@
 
 include 'Personne.php';
 
-$mendy = new Personne();
-$mendy->nom ="mendy";
-$mendy->prenom = "babacar";
-$mendy->age = 17;
-echo "<pre>";
-var_dump($mendy);
-echo "<br></pre>";
-$yennick = new Personne();
-$yennick->age =45;
+// $tab['test'] = 5;
 
-echo "<pre>";
-var_dump($yennick);
-echo "</pre>";
+$mendy = new Personne(); // 
+$mendy->setNom("mendy");
+echo $mendy->getNom();
+// $mendy->afficherPersonne();
+
+
+$yennick = new Personne();// 
+$yennick->afficherPersonne();
