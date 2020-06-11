@@ -1,14 +1,23 @@
 <?php
+include "Personne.php";
 
-include 'Personne.php';
+$obj1 = new Personne("Daffe", "Soumela", 45);
 
-// $tab['test'] = 5;
-
-$mendy = new Personne(); // 
-$mendy->setNom("mendy");
-echo $mendy->getNom();
-// $mendy->afficherPersonne();
+// $obj1->setNom("Daffe");
+// $obj1->setPrenom("Soumela");
+// $obj1->setAge(15);
+// $obj1->nom; // error
 
 
-$yennick = new Personne();// 
-$yennick->afficherPersonne();
+echo "<pre>";
+var_dump($obj1);
+echo "</pre>";
+
+$obj1->grandir();  // incrementer l'age
+$obj1->mourrir();  // remettre l'age a zero
+
+
+// echo "<pre>";
+// var_dump($obj1);
+// echo "</pre>";
+

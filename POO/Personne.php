@@ -1,35 +1,53 @@
 <?php
-class Personne{
 
-    //Attributs
-    private $nom;
-    private $prenom;
-    private $age;
+class Personne {
+    // Les attributs
+    private $nom = "inconnu";
+    private $prenom = "inconnu";
+    private $age = 1;
 
 
-    
+    function __construct(string $nom, string $prenom, int $age)
+    {
+        $this->nom = $nom;
+        $this->prenom = $prenom;
+        $this->age = $age;
 
-    public function getNom(){ // getter pour la variable Nom
+    }
+
+    // les methodes 
+    public function grandir(){
+        // definition de la methode
+    }
+
+    public function mourrir(){
+        // implementation de la methode 
+    }
+
+    // getter
+    public function getNom(): string {
         return $this->nom;
     }
-
-    public function setNom(string $nom_param){ // setter pour la variable nom
-        $this->nom = $nom_param;
+    // setter 
+    public function setNom(string $nom2){
+        $this->nom = $nom2;
     }
 
-    //methodes
-    public function grandir(){
 
+    public function getPrenom(): string { 
+        return $this->prenom;
     }
 
-    public function mourir(){
-
+    public function setPrenom(string $premom){
+        $this->prenom = $premom;
     }
 
-    public function afficherPersonne(){
-        echo "<pre>";
-        var_dump($this);
-        echo "<br></pre>";
+
+    public function getAge(): int {
+        return $this->age;
     }
 
+    public function setAge(int $age){
+        $this->age = $age;
+    }
 }
