@@ -9,15 +9,12 @@ $obj1 = new Personne("Daffe", "Soumela", 45);
 // $obj1->nom; // error
 
 
-echo "<pre>";
-var_dump($obj1);
-echo "</pre>";
+$obj1->affichage("avant gandir");
+$obj1->grandir();  // incrementer l'age => age++
 
-$obj1->grandir();  // incrementer l'age
-$obj1->mourrir();  // remettre l'age a zero
+$obj1->affichage("apres grandir");
 
+$obj1->mourrir();  // remettre l'age a zero => age=0
+$obj1->affichage("apres mourir");
 
-// echo "<pre>";
-// var_dump($obj1);
-// echo "</pre>";
 

@@ -15,13 +15,23 @@ class Personne {
 
     }
 
+    public function affichage($message){
+        echo "<h1>$message</h1><pre>";
+        var_dump($this);
+        echo "</pre>";
+    }
+
     // les methodes 
     public function grandir(){
         // definition de la methode
+        // gandir incrementer l'age
+        $this->age ++;
     }
 
     public function mourrir(){
         // implementation de la methode 
+        // remettre l'age a zero
+        $this->age = 0;
     }
 
     // getter
@@ -41,7 +51,6 @@ class Personne {
     public function setPrenom(string $premom){
         $this->prenom = $premom;
     }
-
 
     public function getAge(): int {
         return $this->age;
