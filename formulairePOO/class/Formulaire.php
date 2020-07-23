@@ -31,17 +31,18 @@ class Formulaire
 
 
 	public function label($name){
-		echo "<label for=\"$name\" class=\"form-label\">$name</label>";
+		return "<label for=\"$name\" class=\"form-label\">$name</label>";
 	}
 
 	public function input($type, $name){
-		echo "<input type=\"$type\" class=\"form-control\" name=\"$name\"></label>";
+		return "<input type=\"$type\" class=\"form-control\" name=\"$name\"></label>";
 	}
 
 	public function button($type, $name, $css){
-		echo "<button type=\"$type\" class=\"btn $css\"> $name</button>";
+		return "<button type=\"$type\" class=\"btn $css\"> $name</button>";
 	}
 
+	
 	public function header(){
 		return "<form action=".$this->getAction()." method=".$this->getMethod().">";
 	}
