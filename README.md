@@ -2,9 +2,9 @@
 # Projet A rendre
 
 ## Rendu
-### Date limite => 31/08/2020
-### Depot => par couriel sur l'email de projetsettp@gmail.com 
-### object Email => NOM_PRENOM_PROJET_ISI_2020
+* Date limite => 31/08/2020
+* Depot => par couriel sur l'email de projetsettp@gmail.com 
+* object Email => NOM_PRENOM_PROJET_ISI_2020
 
 ## Description du projet
 Mettre en place un forum de discussion. Cet forum aura comme fonctionnalités :
