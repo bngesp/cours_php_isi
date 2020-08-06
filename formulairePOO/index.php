@@ -1,4 +1,6 @@
-<?php include 'include/header.php';?>
+<?php 
+session_start();
+include 'include/header.php';?>
 
 <div class="row">
 	<div class="col-md-2"></div>
